@@ -13,19 +13,17 @@
 <p id="result"></p>
 
 <script>
-function calculateFactorial() {
-    let n = document.getElementById("num").value;
-    let result = factorial(n);
-    document.getElementById("result").innerHTML = "The factorial of " + n + " is " + result;
+function calc(x,y,opp){
+    console.log(opp(x,y))
 }
 
-function factorial(n) {
-    if (n === 0 || n === 1) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
+function add(n,5) {
+    return (n+5)
 }
+
+    sub = (x,y) =>{
+        console.log(x-y)
+    }
 </script>
 
 </body>
